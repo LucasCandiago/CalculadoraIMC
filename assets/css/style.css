@@ -31,6 +31,7 @@ form input, form label, form button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 form input {
@@ -56,4 +57,23 @@ form button {
 
 form button:hover {
     background: var(--primary-color-darker);
+}
+
+.table {
+    display: flex;
+}
+
+.table > div {
+    width: 50%;
+}
+
+.p-result {
+    background-color: greenyellow;
+    padding: 10px;
+}
+
+.error {
+    background-color: red;
+    padding: 10px;
+    color: white;
 }

@@ -4,32 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Calculadora De IMC</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/main.js"></script>
 </head>
 <body>
     <section class="container">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam non autem laboriosam nesciunt facilis nisi nemo perspiciatis, quas sequi iste adipisci atque nobis quae odio pariatur repudiandae. Ipsum, totam sit?
-        </p>
-
-        <form action="">
-            <label for="input-test-1">Label teste #1</label>
-            <input type="text" id="input-test-1">
-
-            <label for="input-test-2">Label teste #2</label>
-            <input type="password" id="input-test-2">
-
-            <label for="input-test-3">Label teste #3</label>
-            <input type="email" id="input-test-3">
+        <h1>Tabela IMC</h1>
         
-            <label for="input-test-4">Label teste #4</label>
-            <input type="number" id="input-test-4">
+        <div class="table">
 
-            <button>Enviar</button>
+            <div>
+                <h2>IMC</h2>
+                
+                <p>Menos de 18,5</p>
+                <p>Entre 18,5 e 24,9</p>
+                <p>Entre 25 e 29,9</p>
+                <p>Entre 30 e 34,9</p>
+                <p>Entre 35 e 39,9</p>
+                <p>Mais de 40</p>
+            </div>
+        
+            <div>
+                <h2>Resultado</h2>
+                <p>Abaixo do peso</p>
+                <p>Normal</p>
+                <p>Sobrepeso</p>
+                <p>Obesidade grau 1</p>
+                <p>Obesidade grau 2</p>
+                <p>Obesidade grau 3</p>
+            </div>
+        </div>
+
+        <h1>Calcule seu IMC</h1>
+
+        <form action="/" id="form" method="POST">
+            <label for="peso">Peso: </label>
+            <input type="text" id="peso">
+
+            <label for="altura">Altura: </label>
+            <input type="text" id="altura">
+
+            <button type="submit">Calcular</button>
         </form>
+
+        <div id="resultado"></div>
     </section>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>
